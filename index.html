@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="México en un Clic: destinos, gastronomía, cultura y paisajes de México."
+    />
+    <title>México en un Clic | Inicio</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">MX</span>
+          <div>
+            <strong>México</strong>
+            <span>en un Clic</span>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <a class="nav-menu__link nav-menu__link--active" href="index.html">
+            <span aria-hidden="true">⌂</span> Inicio
+          </a>
+          <a class="nav-menu__link" href="destinos.html">
+            <span aria-hidden="true">⌖</span> Destinos
+          </a>
+          <a class="nav-menu__link" href="gastronomia.html">
+            <span aria-hidden="true">♨</span> Gastronomía
+          </a>
+          <a class="nav-menu__link" href="cultura.html">
+            <span aria-hidden="true">✦</span> Cultura
+          </a>
+          <a class="nav-menu__link" href="galeria.html">
+            <span aria-hidden="true">▧</span> Galería
+          </a>
+        </nav>
+
+        <div class="sidebar__footer">
+          <span>Proyecto integrador</span>
+          <strong>Equipo México</strong>
+        </div>
+      </aside>
+
+      <button
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+        type="button"
+        aria-label="Cerrar menú"
+        tabindex="-1"
+      ></button>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-controls="sidebar"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true">☰</span>
+            <span class="menu-button__text">Menú</span>
+          </button>
+
+          <div class="topbar__message">
+            <span>Bienvenidos a</span>
+            <strong>México en un Clic</strong>
+          </div>
+        </header>
+
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero__content">
+            <span class="eyebrow">Descubre · Aprende · Disfruta</span>
+            <h1 id="hero-title">La riqueza de México, a un clic de distancia</h1>
+            <p>
+              Recorre destinos inolvidables, conoce nuestros sabores y descubre
+              las tradiciones que dan identidad a México.
+            </p>
+            <a class="primary-button" href="#secciones">Comenzar recorrido</a>
+          </div>
+
+          <div class="hero__art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="pyramid">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="cactus cactus--left">♣</div>
+            <div class="cactus cactus--right">♣</div>
+          </div>
+        </section>
+
+        <section class="section" id="secciones" aria-labelledby="sections-title">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Explora el sitio</span>
+              <h2 id="sections-title">¿Qué quieres conocer?</h2>
+            </div>
+            <p>Selecciona una categoría para iniciar tu recorrido.</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="feature-card feature-card--green">
+              <span class="feature-card__number">01</span>
+              <div class="feature-card__icon" aria-hidden="true">⌖</div>
+              <h3>Destinos</h3>
+              <p>Playas, ciudades y paisajes que vale la pena conocer.</p>
+              <a href="destinos.html">Explorar destinos <span>→</span></a>
+            </article>
+
+            <article class="feature-card feature-card--red">
+              <span class="feature-card__number">02</span>
+              <div class="feature-card__icon" aria-hidden="true">♨</div>
+              <h3>Gastronomía</h3>
+              <p>Sabores, ingredientes y platillos de nuestra cocina.</p>
+              <a href="gastronomia.html">Conocer platillos <span>→</span></a>
+            </article>
+
+            <article class="feature-card feature-card--gold">
+              <span class="feature-card__number">03</span>
+              <div class="feature-card__icon" aria-hidden="true">✦</div>
+              <h3>Cultura</h3>
+              <p>Tradiciones y celebraciones llenas de historia y color.</p>
+              <a href="cultura.html">Descubrir cultura <span>→</span></a>
+            </article>
+
+            <article class="feature-card feature-card--blue">
+              <span class="feature-card__number">04</span>
+              <div class="feature-card__icon" aria-hidden="true">▧</div>
+              <h3>Galería</h3>
+              <p>Una colección visual de los rincones de México.</p>
+              <a href="galeria.html">Ver galería <span>→</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="team" aria-labelledby="team-title">
+          <div>
+            <span class="eyebrow">Trabajo colaborativo</span>
+            <h2 id="team-title">Un país, cinco perspectivas</h2>
+            <p>
+              Este sitio fue construido en equipo mediante ramas independientes,
+              commits y Pull Requests.
+            </p>
+          </div>
+          <ul class="team__members" aria-label="Integrantes del equipo">
+            <li><span>SM</span>Samantha Mata</li>
+            <li><span>ZR</span>Zoe Reyes</li>
+            <li><span>AR</span>Adrian Rosales</li>
+            <li><span>AL</span>Angel Luna</li>
+            <li><span>IM</span>Isaac Martinez</li>
+          </ul>
+        </section>
+
+        <footer class="footer">
+          <p>México en un Clic · Proyecto integrador</p>
+          <p>Hecho con trabajo en equipo 🇲🇽</p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
