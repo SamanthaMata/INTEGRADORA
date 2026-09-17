@@ -1,0 +1,117 @@
+:root {
+    --verde: #176b3a;
+    --verde-oscuro: #0d4827;
+    --rojo: #c62828;
+    --blanco: #ffffff;
+    --fondo: #f4f6f5;
+    --texto: #252525;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--verde);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: var(--rojo);
+}
+
+.controles {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.btn-verde {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.btn-verde:hover {
+    background-color: var(--verde-oscuro);
+}
+
+.btn-regresar {
+    background-color: var(--texto);
+    color: var(--blanco);
+}
+
+.dato-resaltado {
+    color: var(--rojo);
+    font-weight: bold;
+    min-height: 24px;
+    margin-top: 15px;
+}
+
+/* --- Sección de Tarjetas Responsiva (Grid Moderno) --- */
+
+.contenedor-tarjetas {
+    display: grid;
+    /* Esto crea columnas automáticamente: mínimo 280px, máximo lo que quepa */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; /* Espacio entre tarjetas */
+    padding: 30px;
+    max-width: 1200px; /* Ancho máximo para que no se estiren demasiado en pantallas gigantes */
+    margin: 0 auto; /* Centra todo el bloque */
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra más suave y moderna */
+    border-radius: 12px; /* Bordes más redondeados */
+    overflow: hidden; /* ¡Importante! Mantiene la imagen dentro de los bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); /* Pequeña elevación moderna al pasar el mouse */
+}
+
+/* La solución mágica para las imágenes WebP gigantes */
+.tarjeta img {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    height: 200px; /* Altura fija para que todas se vean iguales */
+    object-fit: cover; /* Centra y recorta la imagen automáticamente sin deformarla */
+    border-bottom: 2px solid var(--fondo); /* Pequeña línea divisoria */
+}
+
+/* Ajustes de texto dentro de la tarjeta */
+.tarjeta h2 {
+    color: var(--rojo);
+    font-size: 1.4rem;
+    margin: 15px 20px 5px;
+    text-align: left; /* Títulos alineados a la izquierda se ven más modernos */
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 20px 20px;
+    color: var(--texto);
+    flex-grow: 1; /* Asegura que el texto llene el espacio uniformemente */
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cultura y Tradiciones - México en un Clic</title>
+    <link rel="stylesheet" href="css/cultura.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cultura y Tradiciones de México</h1>
+    </header>
+
+    <main>
+      <div class="controles">
+        <button
+          class="btn-regresar"
+          onclick="window.location.href = 'index.html'"
+        >
+          Regresar al Inicio
+        </button>
+        <button id="btn-dato" class="btn-verde">Mostrar Dato Cultural</button>
+        <p id="texto-dato" class="dato-resaltado"></p>
+      </div>
+
+      <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+          <img src="img/cultura/muertos.webp" alt="Día de Muertos" />
+          <h2>Día de Muertos</h2>
+          <p>
+            Celebración del 1 y 2 de noviembre que honra a los ancestros con
+            ofrendas, flores de cempasúchil y papel picado.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="img/cultura/guelaguetza.webp" alt="Guelaguetza" />
+          <h2>Guelaguetza</h2>
+          <p>
+            Festividad máxima de Oaxaca donde las 8 regiones del estado
+            comparten sus danzas, música y tradiciones.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img
+            src="img/cultura/independencia.webp"
+            alt="Día de la Independencia"
+          />
+          <h2>Día de la Independencia</h2>
+          <p>
+            Se celebra la noche del 15 de septiembre con el tradicional "Grito"
+            para conmemorar el inicio de la lucha en 1810.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="img/cultura/voladores.webp" alt="Voladores de Papantla" />
+          <h2>Voladores de Papantla</h2>
+          <p>
+            Ritual prehispánico de fertilidad donde cuatro danzantes descienden
+            girando atados de cuerdas desde un poste.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="img/cultura/posadas.webp" alt="Posadas" />
+          <h2>Posadas</h2>
+          <p>
+            Fiestas previas a la Navidad del 16 al 24 de diciembre,
+            caracterizadas por el ponche, los cantos y las piñatas.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="img/cultura/mariachi.webp" alt="Mariachi" />
+          <h2>Mariachi</h2>
+          <p>
+            Expresión musical tradicional con cuerdas y trompetas, reconocida
+            como Patrimonio Cultural de la Humanidad.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/cultura.js"></script>
+  </body>
+</html>
