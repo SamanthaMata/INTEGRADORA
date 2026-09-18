@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de México</title>
+  <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado-contenido">
+      <h1>Galería de México</h1>
+      <a href="index.html" class="btn-volver">← Regresar al inicio</a>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <p class="intro">
+      Un vistazo visual a los paisajes, la arquitectura, la comida, las tradiciones,
+      las playas y las zonas arqueológicas que hacen de México un país único.
+      Selecciona cualquier imagen para verla en tamaño grande.
+    </p>
+
+    <section class="galeria" id="galeria">
+
+      <figure class="galeria-item" data-categoria="paisajes">
+        <img src="https://picsum.photos/id/1015/600/450" alt="Paisaje montañoso de México" loading="lazy">
+        <figcaption>Paisajes — Sierra Madre</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="arquitectura">
+        <img src="https://picsum.photos/id/1076/600/450" alt="Arquitectura colonial mexicana" loading="lazy">
+        <figcaption>Arquitectura — Centro colonial</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="comida">
+        <img src="https://picsum.photos/id/292/600/450" alt="Platillos tradicionales mexicanos" loading="lazy">
+        <figcaption>Comida — Sabores tradicionales</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="tradiciones">
+        <img src="https://picsum.photos/id/1080/600/450" alt="Celebración de una tradición mexicana" loading="lazy">
+        <figcaption>Tradiciones — Fiestas populares</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="playas">
+        <img src="https://picsum.photos/id/1002/600/450" alt="Playa mexicana" loading="lazy">
+        <figcaption>Playas — Costa mexicana</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="zonas-arqueologicas">
+        <img src="https://picsum.photos/id/1043/600/450" alt="Zona arqueológica mexicana" loading="lazy">
+        <figcaption>Zonas arqueológicas — Legado prehispánico</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="paisajes">
+        <img src="https://picsum.photos/id/1044/600/450" alt="Paisaje natural de México" loading="lazy">
+        <figcaption>Paisajes — Naturaleza</figcaption>
+      </figure>
+
+      <figure class="galeria-item" data-categoria="playas">
+        <img src="https://picsum.photos/id/1053/600/450" alt="Vista de playa y mar en México" loading="lazy">
+        <figcaption>Playas — Litoral del Pacífico</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- Ventana modal para mostrar la imagen en tamaño grande -->
+  <div class="modal" id="modal">
+    <button class="modal-cerrar" id="modal-cerrar" aria-label="Cerrar imagen">&times;</button>
+    <img src="" alt="" id="modal-imagen">
+    <p class="modal-titulo" id="modal-titulo"></p>
+  </div>
+
+  <footer class="pie">
+    <p>Proyecto integrador — Sección de Galería (Rama E)</p>
+  </footer>
+
+  <script src="js/galeria.js"></script>
+</body>
+</html>
